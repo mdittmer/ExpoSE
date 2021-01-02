@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-eslint --fix .eslintrc.json **/src/**.js
+npx eslint --fix .eslintrc.json **/src/**.js
 
 if [ $? -ne 0 ]; then
     echo "ESLint Failed"
